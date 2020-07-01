@@ -133,6 +133,11 @@ class Graphics1d {
       i++;
     }
   }
+  autodraw() {
+    let fmin = f(this.xmin), fmax = f(this.max);
+    this.ymin = fmin;
+    this.ymax = fmax;
+  }
 }
 let graphic = new Graphics1d();
 graphic.evaluate();
