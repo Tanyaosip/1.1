@@ -11,6 +11,39 @@
       width="350"
       height="400"
     />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <h3>
+      Общая формула
+    </h3>
+    $$B\left ( t \right )=\sum_{k=0}^{n}P_{k}b_{k,n}\left ( t \right
+    ),\,0\leqslant t\leqslant 1$$ $$b_{k,n}\left ( t \right
+    )=\begin{pmatrix}n\\k \end{pmatrix}t^{k}\left ( 1-t \right
+    )^{n-k},\,\begin{pmatrix}n\\k \end{pmatrix}=\frac{n!}{k!\left ( n-k \right
+    )!}$$
+    <h3>
+      Формула для n=1
+    </h3>
+    $$B\left ( t \right )=\left ( 1-t \right )P_{0}+tP_{1},\; t\in \left [ 0,\,1
+    \right ] $$
+    <h3>
+      Формула для n=2
+    </h3>
+    $$B\left ( t \right )=\left ( 1-t \right )^{2}P_{0}+2t\left ( 1-t \right
+    )P_{1}+t^{2}P_{2},\;t\in \left [ 0,\,1 \right ]$$
+    <h3>
+      Формула для n=3
+    </h3>
+    $$B\left ( t \right )=\left ( 1-t \right )^{3}P_{0}+3t\left ( 1-t \right
+    )^{2}P_{1}+3t^{2}\left ( 1-t \right )P_{2}+t^{3}P_{3},\;t\in \left [ 0,\,1
+    \right ]$$
+
     <canvas id="canvas" width="895" height="795" style="border: solid"></canvas>
     <script>
       var x = [
